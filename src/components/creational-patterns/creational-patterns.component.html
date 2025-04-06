@@ -1,36 +1,171 @@
-<div class="container-fluid mt-3">
-    <div class="container">
+<div class="container-fluid mt-3 d-flex justify-content-center">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <mat-card class="example-card">
+          <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/structuralpattern.png" class="image-case">
+            </div>       
+          <mat-card-header>
+            <mat-card-title class="mt-2 mb-2 title">Singleton</mat-card-title>
+          </mat-card-header>      
+          <mat-card-content>
+            <ul>
+              <li>
+                  <span class="sub-title">Definición: </span>Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella.
+              </li>
+              <li>
+                  <span class="sub-title">Problema que resuelve: </span>Evita la creación múltiple de objetos que representan recursos compartidos como conexiones de base de datos.
+              </li>
+              <li>
+                  <span class="sub-title">Ventajas: </span>Control centralizado, bajo uso de memoria.
+              </li>
+              <li>
+                  <span class="sub-title">Desventajas: </span>Dificulta pruebas unitarias; puede introducir acoplamientos fuertes.
+              </li>
+              <li>
+                  <span class="sub-title">Usos: </span>Sistemas de logging, manejo de configuraciones globales, drivers.
+              </li>
+              <li>
+                  <span class="sub-title">Patrones relacionados: </span>Factory Method, Facade.
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+      <div class="carousel-item">
+        <mat-card class="example-card">
+          <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/logo.png" class="image-case">
+            </div>       
+          <mat-card-header>
+            <mat-card-title class="mt-2 mb-2 title">Factory Method</mat-card-title>
+          </mat-card-header>      
+          <mat-card-content>
+            <ul>
+              <li>
+                  <span class="sub-title">Definición: </span>Define una interfaz para crear un objeto, pero permite que las subclases decidan qué clase instanciar.
+              </li>
+              <li>
+                  <span class="sub-title">Utilidad: </span>Facilita la extensibilidad sin conocer las clases exactas a crear.
 
+              </li>
+              <li>
+                  <span class="sub-title">Ventajas: </span>Desacopla la lógica de creación del cliente.
+              </li>
+              <li>
+                  <span class="sub-title">Desventajas: </span>Aumenta la complejidad con múltiples subclases.
+              </li>
+              <li>
+                  <span class="sub-title">Usos: </span>Creación de componentes UI, controladores web.
+              </li>
+              <li>
+                  <span class="sub-title">Patrones relacionados: </span>Abstract Factory, Template Method.
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+      <div class="carousel-item">
+        <mat-card class="example-card">
+          <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/logo.png" class="image-case">
+            </div>       
+          <mat-card-header>
+            <mat-card-title class="mt-2 mb-2 title">Abstract Factory</mat-card-title>
+          </mat-card-header>      
+          <mat-card-content>
+            <ul>
+              <li>
+                  <span class="sub-title">Definición: </span>: Permite crear familias de objetos relacionados sin especificar sus clases concretas.
+              </li>
+              <li>
+                  <span class="sub-title">Problema que resuelve: </span>Mantiene la coherencia entre productos que deben funcionar juntos.
+
+
+              </li>
+              <li>
+                  <span class="sub-title">Ventajas: </span>Asegura compatibilidad entre objetos.
+              </li>
+              <li>
+                  <span class="sub-title">Desventajas: </span>Difícil agregar nuevas familias de productos.              </li>
+              <li>
+                  <span class="sub-title">Usos: </span>Diseño de interfaces gráficas multiplataforma, sistemas de temas o "skins".
+              </li>
+              <li>
+                  <span class="sub-title">Patrones relacionados: </span>Factory Method, Builder.
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+      <div class="carousel-item">
+        <mat-card class="example-card">
+          <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/logo.png" class="image-case">
+            </div>       
+          <mat-card-header>
+            <mat-card-title class="mt-2 mb-2 title">Builder</mat-card-title>
+          </mat-card-header>      
+          <mat-card-content>
+            <ul>
+              <li>
+                  <span class="sub-title">Definición: </span>Separa la construcción de un objeto complejo de su representación final.
+              </li>
+              <li>
+                  <span class="sub-title">Utilidad: </span>Útil cuando un objeto puede tener múltiples representaciones o configuraciones.
+              </li>
+              <li>
+                  <span class="sub-title">Ventajas: </span>Control detallado del proceso de creación.
+              </li>
+              <li>
+                  <span class="sub-title">Desventajas: </span>Sobrecarga si el objeto no es complejo.              </li>
+              <li>
+                  <span class="sub-title">Usos: </span>Creación de documentos, mensajes complejos, configuradores de productos.
+              </li>
+              <li>
+                  <span class="sub-title">Patrones relacionados: </span>Composite, Fluent Interface
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+      <div class="carousel-item">
+        <mat-card class="example-card">
+          <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/logo.png" class="image-case">
+            </div>       
+          <mat-card-header>
+            <mat-card-title class="mt-2 mb-2 title">Prototype</mat-card-title>
+          </mat-card-header>      
+          <mat-card-content>
+            <ul>
+              <li>
+                  <span class="sub-title">Definición: </span>Permite crear nuevos objetos copiando una instancia prototipo
+              </li>
+              <li>
+                  <span class="sub-title">Ventajas: </span>Evita la creación repetida desde cero.
+              </li>
+              <li>
+                  <span class="sub-title">Desventajas: </span>Puede ser difícil clonar objetos con referencias complejas.              </li>
+              <li>
+                  <span class="sub-title">Usos: </span>Juegos (clonación de personajes), editores gráficos.
+              </li>
+              <li>
+                  <span class="sub-title">Patrones relacionados: </span>Singleton, Memento.
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card> 
+      </div>
     </div>
-    <mat-card class="example-card">
-        <div class="d-flex justify-content-center mt-2">
-            <img mat-card-image src="/assets/structuralpattern.png" class="image-case">
-          </div>       
-        <mat-card-header>
-          <mat-card-title class="mt-2 mb-2 title">Singleton</mat-card-title>
-        </mat-card-header>
-      
-        <mat-card-content>
-          <ul>
-            <li>
-                <span class="sub-title">Definición: </span>Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella.
-            </li>
-            <li>
-                <span class="sub-title">Problema que resuelve: </span>Evita la creación múltiple de objetos que representan recursos compartidos como conexiones de base de datos.
-            </li>
-            <li>
-                <span class="sub-title">Ventajas: </span>Control centralizado, bajo uso de memoria.
-            </li>
-            <li>
-                <span class="sub-title">Desventajas: </span>Dificulta pruebas unitarias; puede introducir acoplamientos fuertes.
-            </li>
-            <li>
-                <span class="sub-title">Usos: </span>Sistemas de logging, manejo de configuraciones globales, drivers.
-            </li>
-            <li>
-                <span class="sub-title">Patrones relacionados: </span>Factory Method, Facade.
-            </li>
-          </ul>
-        </mat-card-content>
-      </mat-card>  
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>
