@@ -1,36 +1,119 @@
 <div class="container-fluid mt-3">
-    <div class="container">
 
+  <div class="container-fluid mt-3 d-flex justify-content-center">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <mat-card class="example-card">
+            <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/structuralpattern.png" class="image-case">
+            </div>       
+            <mat-card-header>
+              <mat-card-title class="mt-2 mb-2 title">Chain of Responsibility</mat-card-title>
+            </mat-card-header>      
+            <mat-card-content>
+              <ul>
+                <li><span class="sub-title">Definición: </span>Permite que una solicitud pase por una cadena de objetos hasta ser atendida.</li>
+                <li><span class="sub-title">Usos: </span>Validadores, manejo de eventos.</li>
+                <li><span class="sub-title">Ventajas: </span>Separación de responsabilidades.</li>
+                <li><span class="sub-title">Desventajas: </span>Difícil saber cuál objeto responderá.</li>
+                <li><span class="sub-title">Patrones relacionados: </span>Command, Composite.</li>
+              </ul>
+            </mat-card-content>
+          </mat-card> 
+        </div>
+
+        <div class="carousel-item">
+          <mat-card class="example-card">
+            <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/factory-method-mini.png" class="image-case">
+            </div>       
+            <mat-card-header>
+              <mat-card-title class="mt-2 mb-2 title">Command</mat-card-title>
+            </mat-card-header>      
+            <mat-card-content>
+              <ul>
+                <li><span class="sub-title">Definición: </span>Encapsula una solicitud como objeto, permitiendo parametrizar acciones y soportar deshacer/rehacer.</li>
+                <li><span class="sub-title">Ejemplo: </span>Menús y botones de interfaz gráfica.</li>
+                <li><span class="sub-title">Ventajas: </span>Alta flexibilidad.</li>
+                <li><span class="sub-title">Desventajas: </span>Puede crear muchas clases.</li>
+                <li><span class="sub-title">Usos: </span>Sistemas de tareas, historial de acciones.</li>
+                <li><span class="sub-title">Patrones relacionados: </span>Memento, Invoker.</li>
+              </ul>
+            </mat-card-content>
+          </mat-card> 
+        </div>
+
+        <div class="carousel-item">
+          <mat-card class="example-card">
+            <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/abstract-factory-mini.png" class="image-case">
+            </div>       
+            <mat-card-header>
+              <mat-card-title class="mt-2 mb-2 title">Interpreter</mat-card-title>
+            </mat-card-header>      
+            <mat-card-content>
+              <ul>
+                <li><span class="sub-title">Definición: </span>Interpreta gramáticas y lenguajes definidos por reglas.</li>
+                <li><span class="sub-title">Usos: </span>Lenguajes específicos de dominio (DSLs).</li>
+                <li><span class="sub-title">Desventajas: </span>Difícil de mantener con gramáticas extensas.</li>
+                <li><span class="sub-title">Patrones relacionados: </span>Composite, Visitor.</li>
+              </ul>
+            </mat-card-content>
+          </mat-card> 
+        </div>
+
+        <div class="carousel-item">
+          <mat-card class="example-card">
+            <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/builder-mini.png" class="image-case">
+            </div>       
+            <mat-card-header>
+              <mat-card-title class="mt-2 mb-2 title">Iterator</mat-card-title>
+            </mat-card-header>      
+            <mat-card-content>
+              <ul>
+                <li><span class="sub-title">Definición: </span>Proporciona una forma de recorrer los elementos de una colección sin exponer su estructura interna.</li>
+                <li><span class="sub-title">Ventajas: </span>Acceso uniforme.</li>
+                <li><span class="sub-title">Desventajas: </span>Puede implicar sobrecarga en ciertas implementaciones.</li>
+                <li><span class="sub-title">Usos: </span>Recorrido de listas, matrices.</li>
+                <li><span class="sub-title">Patrones relacionados: </span>Composite, Factory Method.</li>
+              </ul>
+            </mat-card-content>
+          </mat-card> 
+        </div>
+
+        <div class="carousel-item">
+          <mat-card class="example-card">
+            <div class="d-flex justify-content-center mt-2">
+              <img mat-card-image src="/assets/prototype-mini.png" class="image-case">
+            </div>       
+            <mat-card-header>
+              <mat-card-title class="mt-2 mb-2 title">Mediator</mat-card-title>
+            </mat-card-header>      
+            <mat-card-content>
+              <ul>
+                <li><span class="sub-title">Definición: </span>Centraliza la comunicación entre varios objetos para evitar dependencias directas.</li>
+                <li><span class="sub-title">Usos: </span>Interfaces gráficas.</li>
+                <li><span class="sub-title">Ventajas: </span>Menor acoplamiento.</li>
+                <li><span class="sub-title">Desventajas: </span>Puede convertirse en una clase muy compleja.</li>
+                <li><span class="sub-title">Patrones relacionados: </span>Observer, Facade.</li>
+              </ul>
+            </mat-card-content>
+          </mat-card> 
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <mat-card class="example-card">
-        <div class="d-flex justify-content-center mt-2">
-            <img mat-card-image src="/assets/structuralpattern.png" class="image-case">
-          </div>       
-        <mat-card-header>
-          <mat-card-title class="mt-2 mb-2 title">Singleton</mat-card-title>
-        </mat-card-header>
-      
-        <mat-card-content>
-          <ul>
-            <li>
-                <span class="sub-title">Definición: </span>Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella.
-            </li>
-            <li>
-                <span class="sub-title">Problema que resuelve: </span>Evita la creación múltiple de objetos que representan recursos compartidos como conexiones de base de datos.
-            </li>
-            <li>
-                <span class="sub-title">Ventajas: </span>Control centralizado, bajo uso de memoria.
-            </li>
-            <li>
-                <span class="sub-title">Desventajas: </span>Dificulta pruebas unitarias; puede introducir acoplamientos fuertes.
-            </li>
-            <li>
-                <span class="sub-title">Usos: </span>Sistemas de logging, manejo de configuraciones globales, drivers.
-            </li>
-            <li>
-                <span class="sub-title">Patrones relacionados: </span>Factory Method, Facade.
-            </li>
-          </ul>
-        </mat-card-content>
-      </mat-card>  
+  </div>
 </div>
