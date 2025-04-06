@@ -119,6 +119,130 @@
             </mat-card-content>
           </mat-card> 
         </div>
+        <!-- Memento -->
+<div class="carousel-item">
+  <mat-card class="example-card">
+    <div class="d-flex justify-content-center mt-2">
+      <img mat-card-image src="/assets/factory-method-mini.png" class="image-case">
+    </div>       
+    <mat-card-header>
+      <mat-card-title class="mt-2 mb-2 title">Memento</mat-card-title>
+    </mat-card-header>      
+    <mat-card-content>
+      <ul>
+        <li><span class="sub-title">Definición: </span>Permite capturar y restaurar el estado de un objeto sin violar su encapsulamiento.</li>
+        <li><span class="sub-title">Ejemplo: </span>Funciones “deshacer” en editores.</li>
+        <li><span class="sub-title">Desventajas: </span>Consumo de memoria.</li>
+        <li><span class="sub-title">Usos: </span>Juegos, editores, pruebas.</li>
+        <li><span class="sub-title">Patrones relacionados: </span>Command, Prototype.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card> 
+</div>
+
+<!-- Observer -->
+<div class="carousel-item">
+  <mat-card class="example-card">
+    <div class="d-flex justify-content-center mt-2">
+      <img mat-card-image src="/assets/prototype-mini.png" class="image-case">
+    </div>       
+    <mat-card-header>
+      <mat-card-title class="mt-2 mb-2 title">Observer</mat-card-title>
+    </mat-card-header>      
+    <mat-card-content>
+      <ul>
+        <li><span class="sub-title">Definición: </span>Permite que múltiples objetos se suscriban y reaccionen a cambios en otro objeto.</li>
+        <li><span class="sub-title">Usos: </span>Sistemas de eventos, interfaces reactivas.</li>
+        <li><span class="sub-title">Desventajas: </span>Puede generar dependencias ocultas.</li>
+        <li><span class="sub-title">Patrones relacionados: </span>Mediator, Event Dispatcher.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card> 
+</div>
+
+<!-- State -->
+<div class="carousel-item">
+  <mat-card class="example-card">
+    <div class="d-flex justify-content-center mt-2">
+      <img mat-card-image src="/assets/builder-mini.png" class="image-case">
+    </div>       
+    <mat-card-header>
+      <mat-card-title class="mt-2 mb-2 title">State</mat-card-title>
+    </mat-card-header>      
+    <mat-card-content>
+      <ul>
+        <li><span class="sub-title">Definición: </span>Permite que un objeto modifique su comportamiento según su estado interno.</li>
+        <li><span class="sub-title">Ventajas: </span>Mejora organización del código.</li>
+        <li><span class="sub-title">Desventajas: </span>Aumenta el número de clases.</li>
+        <li><span class="sub-title">Usos: </span>Máquinas de estados, juegos, workflows.</li>
+        <li><span class="sub-title">Patrones relacionados: </span>Strategy, Flyweight.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card> 
+</div>
+
+<!-- Strategy -->
+<div class="carousel-item">
+  <mat-card class="example-card">
+    <div class="d-flex justify-content-center mt-2">
+      <img mat-card-image src="/assets/abstract-factory-mini.png" class="image-case">
+    </div>       
+    <mat-card-header>
+      <mat-card-title class="mt-2 mb-2 title">Strategy</mat-card-title>
+    </mat-card-header>      
+    <mat-card-content>
+      <ul>
+        <li><span class="sub-title">Definición: </span>Permite definir diferentes algoritmos y hacerlos intercambiables.</li>
+        <li><span class="sub-title">Ejemplo: </span>Métodos de ordenamiento.</li>
+        <li><span class="sub-title">Ventajas: </span>Código más limpio.</li>
+        <li><span class="sub-title">Desventajas: </span>Puede haber sobrecarga si no se gestiona bien.</li>
+        <li><span class="sub-title">Usos: </span>Algoritmos personalizables, IA, navegación.</li>
+        <li><span class="sub-title">Patrones relacionados: </span>State, Template Method.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card> 
+</div>
+
+<!-- Template Method -->
+<div class="carousel-item">
+  <mat-card class="example-card">
+    <div class="d-flex justify-content-center mt-2">
+      <img mat-card-image src="/assets/factory-method-mini.png" class="image-case">
+    </div>       
+    <mat-card-header>
+      <mat-card-title class="mt-2 mb-2 title">Template Method</mat-card-title>
+    </mat-card-header>      
+    <mat-card-content>
+      <ul>
+        <li><span class="sub-title">Definición: </span>Define la estructura de un algoritmo, delegando pasos específicos a las subclases.</li>
+        <li><span class="sub-title">Usos: </span>Frameworks, librerías reutilizables.</li>
+        <li><span class="sub-title">Ventajas: </span>Reutilización.</li>
+        <li><span class="sub-title">Desventajas: </span>Menor flexibilidad si los pasos están demasiado definidos.</li>
+        <li><span class="sub-title">Patrones relacionados: </span>Factory Method, Strategy.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card> 
+</div>
+
+<!-- Visitor -->
+<div class="carousel-item">
+  <mat-card class="example-card">
+    <div class="d-flex justify-content-center mt-2">
+      <img mat-card-image src="/assets/structuralpattern.png" class="image-case">
+    </div>       
+    <mat-card-header>
+      <mat-card-title class="mt-2 mb-2 title">Visitor</mat-card-title>
+    </mat-card-header>      
+    <mat-card-content>
+      <ul>
+        <li><span class="sub-title">Definición: </span>Permite definir nuevas operaciones sobre una estructura de objetos sin modificar sus clases.</li>
+        <li><span class="sub-title">Usos: </span>Compiladores, análisis sintáctico.</li>
+        <li><span class="sub-title">Desventajas: </span>Rígido ante nuevas estructuras.</li>
+        <li><span class="sub-title">Patrones relacionados: </span>Composite, Interpreter.</li>
+      </ul>
+    </mat-card-content>
+  </mat-card> 
+</div>
 
       </div>
 
