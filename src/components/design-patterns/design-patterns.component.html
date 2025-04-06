@@ -11,8 +11,8 @@
         <div class="body-patters">
             <div class="row">
                 <div class="col-4">
-                    <mat-card class="example-card">
-                        <img mat-card-image src="/assets/logo.png" alt="Ejemplo de patrón">
+                    <mat-card class="example-card" [routerLink]="['/creational-patterns']">
+                        <img mat-card-image src="/assets/logo.png">
                         
                         <mat-card-header>
                           <mat-card-title class="mt-2 mb-2">PATRONES CREACIONALES</mat-card-title>
@@ -23,15 +23,16 @@
                             Los patrones creacionales se centran en el proceso de creación de objetos, permitiendo mayor flexibilidad al decidir cómo, cuándo y con qué componentes se crean las instancias de una clase. Esto es fundamental en arquitecturas complejas, donde el instanciamiento directo podría acoplar demasiado el sistema.
                           </p>
                         </mat-card-content>
-                      </mat-card>
-                      
+                      </mat-card>                      
                 </div>
                 <div class="col-4">
                     <mat-card class="example-card">
-                        <img mat-card-image src="/assets/logo.png" alt="Ejemplo de patrón">
+                        <div class="d-flex justify-content-center mt-2">
+                          <img mat-card-image src="/assets/structuralpattern.png" class="structural-image">
+                        </div>                       
                         
                         <mat-card-header>
-                          <mat-card-title class="mt-2 mb-2">PATRONES ESTRUCTURALES</mat-card-title>
+                          <mat-card-title class="mb-2">PATRONES ESTRUCTURALES</mat-card-title>
                         </mat-card-header>
                       
                         <mat-card-content>
@@ -43,7 +44,9 @@
                 </div>
                 <div class="col-4">
                     <mat-card class="example-card">
-                        <img mat-card-image src="/assets/logo.png" alt="Ejemplo de patrón">
+                      <div class="d-flex justify-content-center mt-2">
+                        <img mat-card-image src="/assets/comportamiento_pattern.jpeg" class="compor-image">
+                      </div> 
                         
                         <mat-card-header>
                           <mat-card-title class="mt-2 mb-2">PATRONES DE COMPORTAMIENTO</mat-card-title>
