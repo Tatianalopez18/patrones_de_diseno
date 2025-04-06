@@ -1,0 +1,66 @@
+mat-card {
+    border-radius: 20px;
+    width: 100vh;
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;    
+}
+mat-card-header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+mat-mdc-card-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+mat-card-content{
+    padding: 4px;
+}
+.image-case{
+    height: 160px;
+    width: 140px;
+} 
+.sub-title{
+    font-weight: bold;
+}
+.title{
+    font-weight: bold;
+    font-size: 28px;
+}
+.image-case {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+
+.example-card {
+  padding: 1rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+#carouselExample{
+  width: 180vh;
+  display: flex;
+  justify-content: center;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 10px;
+}
