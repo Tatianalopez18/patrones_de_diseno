@@ -2,9 +2,9 @@ mat-card {
     border-radius: 20px;
     width: 100vh;
     padding: 0px 10px 0px 10px;
-    background-color: white;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;    
+    background-color: rgba(119,124,224, 0.2);
 }
 mat-mdc-card-title {
     font-size: 18px;
