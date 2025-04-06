@@ -8,6 +8,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
+        <li class="nav-item" [routerLink]="['/resources']" class="subtitles">
+          <button class="btn btn-outline-secondary border-0 mb-3" (click)="goBack()">
+            <img src="/assets/arrow.svg" alt="" class="arrow">
+          </button>          
+        </li>
         <li class="nav-item" [routerLink]="['/designpatterns']"  class="subtitles">
           <a class="nav-link active" aria-current="page">Patrones de diseño</a>
         </li>

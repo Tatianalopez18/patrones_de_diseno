@@ -8,3 +8,12 @@
 .subtitles{
     cursor: pointer;
 }
+.subtitles:hover{
+    color: white;
+    a{
+        color:#777CE0;
+    }
+}
+.arrow{
+    height: 35px;
+}
